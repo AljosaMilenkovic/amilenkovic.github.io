@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aljosa Milenkovic</title>
+    <style>
+        body {
+            background-color: rgba(173, 216, 230, 0.5); /* Light blue with opacity */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .header {
+            background-color: #1E90FF; /* Dark blue */
+            color: #FFFFFF; /* White */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #FFFFFF;
+            padding: 10px 20px;
+        }
+
+        .menu a:hover {
+            background-color: #FFFFFF;
+            color: #1E90FF;
+        }
+
+        .title-container {
+            text-align: center;
+            padding: 20px;
+font-size: 24px;
+        }
+
+        .title {
+            color: #1E90FF; /* Dark blue */
+        }
+
+.below-title {
+            display: flex; /* Create a flex container */
+        }
+
+        
+        .profile-picture {
+            flex: 40%; /* Takes up 40% of available space */
+            padding: 20px; /* Add padding as needed */
+        }
+
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .welcome-text {
+            font-size: 24px;
+            flex: 60%;
+	text-align: center;
+        }
+
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+ /* Style the dropdown button (in this case, the title) */
+        .dropdown-button {
+            cursor: pointer;
+            color: blue; /* Change the color as desired */
+            text-decoration: underline; /* Underline the text */
+        }
+
+        /* Hide the dropdown content by default */
+        .dropdown-content {
+            display: none;
+        }
+
+.footer {
+    background-color: #1E90FF;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer p {
+    text-align: center;
+}
+    </style>
+
+
+<script>
+        function toggleAbstract(contentId) {
+            var abstractContent = document.getElementById(contentId);
+            if (abstractContent.style.display === "none") {
+                abstractContent.style.display = "block";
+            } else {
+                abstractContent.style.display = "none";
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+    <div class="header">
+        <div class="menu">
+            <a href="website.html">Home</a>
+            <a href="about.html">About&CV</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="publications.html">Papers</a>
+            <a href="presentations.html">Presentations</a>
+        </div>
+    </div>
+
+	<div class="title-container">
+        <h1 class="title">Aljoša Milenković</h1>
+	<h3>Serbian: [ˈaʎɔʃa miˈlɛːŋkɔʋiʨ]</h3>
+	<h3>American English: [əɫˈjoʊʃə məˈlɛŋkɑvɪʧ]</h3>
+</div>
+
+<div class="below-title">
+<div class="welcome-text">
+        <p>Welcome! I am a linguist specializing in phonological theory, dialectology and historical linguistics. I am currently a third-year PhD student at Harvard University. </p>
+
+[<span class="dropdown-button" onclick="toggleAbstract('abstract-content-h')">srpski</span>]
+            <div id="abstract-content-h" class="dropdown-content">
+               Dobro došli! Ovaj sajt posvećen je mom naučnom radu. Na njemu se možete informisati o mojim trenutnim istraživačkim projektima, kao i o projektima koje nameravam da započnem. Bavim se lingvistikom, sa posebnim osvrtom na fonologiju, sintaksu, dijalektologiju i istoriju jezika. Iako je osnovni cilj mog rada pronalaženje opštih principa na kojima se zasnivaju <i>svi</i> ljudski jezici, južnoslovenski jezici zauzimaju naročito važno mesto u mojim istraživanjima. Osnovne i master studije završio sam na Katedri za srpski jezik sa južnoslovenskim jezicima Filološkog fakulteta Univerziteta u Beogradu, a trenutno sam na trećoj godini doktorskih studija na Univerzitetu Harvard (Kembridž, Masačusets, SAD). Na ovom sajtu možete pronaći moje <a href="publications.html">radove</a>, <a href="presentations.html">slajdove i hendaute sa konferencija</a>, kao i <a href="#">matreijale sa mojih predavanja</a>.
+            </div> 
+
+</div>
+<div class="profile-picture">
+<img src="ja.jpg" alt="Aljosa Milenkovic's Picture" class="profile-image" width="400" height="600">
+</div>
+</div>
+</body>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <!-- Footer content goes here -->
+        <p>Email: aljosamilenkovic [at] g [dot] harvard [dot] edu</p>
+	<p>Harvard Linguistics Department: Boylston Hall, 3rd floor, 02138 Cambridge, MA</p>
+	<p>Office: Harvard PhonLab, 90 Mt Auburn, 2nd floor, 02138 Cambridge, MA </p>
+	<p><a href="https://github.com/AljosaMilenkovic">GitHub</a></p>
+    </div>
+</footer>
+
+</html>
